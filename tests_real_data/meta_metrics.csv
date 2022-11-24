@@ -1,0 +1,8 @@
+name,best_orientation
+accuracy,max
+balanced_accuracy,max
+cross_entropy,min
+balanced_cross_entropy,min
+roc_auc_score,max
+roc_curve,NAN
+auprc,max

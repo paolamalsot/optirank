@@ -1,0 +1,13 @@
+name: optirank
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - scikit-learn=1.0.2
+  - h5py=3.6.0
+  - pytorch=1.10.2
+  - matplotlib=3.5.1
+  - cython=0.29.28
+  - pandas=1.4.2
+  - seaborn=0.11.2
+#prefix: /Users/test/opt/anaconda3/envs/optirank

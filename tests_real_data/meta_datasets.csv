@@ -1,0 +1,18 @@
+dataset_name,classes,n_splits,n_test_splits,n_training_samples
+BRCA,False,12,4,482
+Leukemia,LSC+,30,6,81
+Novigenix,AA CON CRC,5,1,348
+Baron_Murano,acinar alpha beta delta ductal endothelial epsilon gamma,5,1,715
+Baron_Segerstolpe,acinar alpha beta delta ductal endothelial epsilon gamma mast,5,1,737
+MWS_TM10x,B_cell T_cell alveolar_macrophage endothelial_cell epithelial_cell erythroblast granulocyte hepatocyte keratinocyte macrophage mesenchymal_stem_cell monocyte natural_killer_cell stromal_cell,5,1,1252
+MWS_TMfacs,B_cell T_cell basophil endothelial_cell epithelial_cell granulocyte granulocyte_monocyte_progenitor_cell hepatocyte keratinocyte macrophage mesenchymal_stem_cell monocyte natural_killer_cell neuron oligodendrocyte_precursor_cell smooth_muscle_cell stromal_cell,5,1,1521
+TM10x_MWS,B_cell T_cell alveolar_macrophage endothelial_cell epithelial_cell erythroblast granulocyte hepatocyte keratinocyte macrophage mesenchymal_stem_cell monocyte natural_killer_cell stromal_cell,5,1,1322
+TM10x_TMfacs,B_cell T_cell basal_cell basal_cell_of_epidermis bladder_cell bladder_urothelial_cell cardiac_muscle_cell endocardial_cell endothelial_cell epithelial_cell erythrocyte fibroblast granulocyte hematopoietic_precursor_cell hepatocyte keratinocyte kidney_collecting_duct_epithelial_cell late_pro-B_cell leukocyte luminal_epithelial_cell_of_mammary_gland macrophage mesenchymal_cell mesenchymal_stem_cell monocyte natural_killer_cell skeletal_muscle_satellite_cell stromal_cell,5,1,2530
+TMfacs_MWS,B_cell T_cell basophil endothelial_cell epithelial_cell granulocyte granulocyte_monocyte_progenitor_cell hepatocyte keratinocyte macrophage mesenchymal_stem_cell monocyte natural_killer_cell neuron oligodendrocyte_precursor_cell smooth_muscle_cell stromal_cell,5,1,1559
+Baron_Segerstolpe_Murano,acinar beta delta ductal alpha epsilon gamma endothelial,5,1,715
+MWS_TMfacs_TM10x,stromal_cell epithelial_cell endothelial_cell macrophage B_cell monocyte T_cell granulocyte hepatocyte mesenchymal_stem_cell natural_killer_cell keratinocyte,5,1,1052
+TCGA_PCAWG_met500,Breast Colo-rectal Esophagus Pancreas Stomach,5,1,2945
+Baron_Segerstolpe_Murano_01_sub_merged,acinar alpha beta delta ductal endothelial epsilon gamma,5,1,682
+TCGA_PCAWG_met500_01_sub_merged,Breast Colo-rectal Esophagus Pancreas Stomach,5,1,3041
+MWS_TMfacs_TM10x_01_sub_merged,B_cell T_cell endothelial_cell epithelial_cell granulocyte hepatocyte keratinocyte macrophage mesenchymal_stem_cell monocyte natural_killer_cell stromal_cell,5,1,1152
+TCGA,Esophagus Stomach Pancreas Breast Colo-rectal,5,1,2650

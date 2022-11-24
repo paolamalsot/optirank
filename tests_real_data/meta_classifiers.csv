@@ -1,0 +1,7 @@
+classifier_name, length_parameter_grid
+optirank,250
+ANOVA_subset_ranking_lr,250
+logistic_regression_based_on_rankings,25
+logistic_regression,25
+random_forest,1
+single_cell_net,1

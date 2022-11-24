@@ -1,0 +1,4 @@
+experiment_name,datasets
+simple_tasks,BRCA TCGA Baron_Segerstolpe MWS_TM10x MWS_TMfacs TM10x_MWS TM10x_TMfacs TMfacs_MWS Baron_Murano
+single_source,TCGA_PCAWG_met500 Baron_Segerstolpe_Murano MWS_TMfacs_TM10x
+multiple_sources,TCGA_PCAWG_met500_01_sub_merged Baron_Segerstolpe_Murano_01_sub_merged MWS_TMfacs_TM10x_01_sub_merged

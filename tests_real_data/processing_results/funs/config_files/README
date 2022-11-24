@@ -1,0 +1,7 @@
+Different experiment names:
+#simple
+#single-source
+#multiple-sources
+
+Each config file corresponds to constants of one experiment.
+Before running the processing, one needs to copy config_experiment_name.py to config.py
