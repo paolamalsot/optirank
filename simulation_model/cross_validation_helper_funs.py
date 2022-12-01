@@ -5,15 +5,6 @@ from sklearn.preprocessing import FunctionTransformer
 from utilities.math_functions import rankdata_fun
 from sklearn.pipeline import make_pipeline
 from utilities.optirank.classifiers.classifiers_helper import convert_penalties
-import torch
-
-
-def get_constraint_sum_gamma_list(p):
-    sum_gamma_true = torch.count_nonzero(p.gamma).item()
-    d = len(p.gamma)
-    percentages = [0.25, 0.5, 0.75, 1]
-    ns = [int(d * per) for per in percentages]
-    return [sum_gamma_true] + ns
 
 
 bilinear_ranking_classifier_names = ["optirank"]
@@ -25,14 +16,14 @@ def get_list_all_classifiers(X_train, train_ratio, p):
     lambda_w_2_list = {"lambda_w_2": loglist}
     n_samples = X_train.shape[0] * train_ratio
     sklearn_logistic_regression_params = [convert_penalties(0, l2_w, n_samples) for l2_w in loglist]
-    constraint_sum_gamma_k_list = get_constraint_sum_gamma_list(p)
+    constraint_per_gamma_k_list = [0.2, 0.4, 0.6, 0.8, 1]
 
     # optirank_classifier
     optirank_params = {**default_optirank_args, "max_relaxation_iter": 1000}
     optirank = Optirank(**optirank_params)
     parameter_dict_optirank = {"lambda_gamma_1": [0],
                                "lambda_gamma_2": [0],
-                               "constraint_sum_gamma_k": constraint_sum_gamma_k_list}
+                               "constraint_per_gamma_k": constraint_per_gamma_k_list}
     parameter_grid_optirank = {**parameter_dict_optirank, **lambda_w_2_list}
 
     # logistic_regression
